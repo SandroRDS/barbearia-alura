@@ -1,0 +1,81 @@
+main .container
+{
+    margin: 0px auto;
+    width: 940px;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+main .itens
+{
+    border: 3px solid black;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    height: 60vh;
+    border-radius: 40px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    cursor: pointer;
+    transition: height 500ms, width 500ms, border 150ms, box-shadow 500ms;
+}
+
+main .itens:hover
+{
+    border: 4px solid #2b2a6ad9;
+    box-shadow: 9px 9px 15px rgb(45, 45, 78);
+    height: 62vh;
+    width: 31%;
+}
+
+main .itens:active
+{
+    border-color: #4354b8;
+}
+
+main .itens:hover h2 
+{
+    font-size: 35px;
+    color: #2b2a6ad9;
+}
+
+main .itens:hover .descricao
+{
+    font-size: 21px;
+}
+
+main .itens:hover .preco
+{
+    font-size: 25px;
+    color: #2b2a6ad9;
+}
+
+main ul li:nth-child(2)
+{
+    margin-right: 2%; 
+    margin-left: 2%;
+}
+
+main h2
+{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10% 0px;
+    transition: font-size 500ms;
+}
+
+main .descricao
+{
+    font-size: 18px;
+    margin-top: 12%;
+    transition: font-size 500ms;
+}
+
+main .preco
+{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 4%;
+    transition: font-size 500ms;
+}
