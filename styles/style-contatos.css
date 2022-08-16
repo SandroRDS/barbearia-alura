@@ -21,17 +21,68 @@ form
 
 .label_input label
 {
+    display: block;
     font-size: 20px;
+    margin-bottom: 1%;
 }
 
-input[type="text"], input[type="email"]
+.label_input legend
+{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]
 {
     border-radius: 10px;
     border: 2px solid #2b2a6ad9;
     padding: 5px 10px;
     display: block;
-    margin-top: 1%;
     font-size: 15px;
+    width: 80%;
+    text-align: left;
+}
+
+input[type="radio"]
+{
+    width: 20px;
+    height: 20px;
+}
+
+.select
+{
+    border-radius: 20px;
+    width: 25%;
+    text-align: center;
+    height: 3vh;
+    border: 2px solid #2b2a6ad9;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.label_input textarea
+{
+    width: 90%;
+    height: 20vh;
+    resize: none;
+    border-radius: 20px;
+    border: 2px solid #2b2a6ad9;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.label_radio label
+{
+    font-size: 17px;
+    display: inline;
+    cursor: pointer;
+}
+
+.label_radio div
+{
+    margin: 5% 0;
 }
 
 #enviar
