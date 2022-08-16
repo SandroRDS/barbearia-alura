@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Barbearia Alura</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/style-contatos.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1><img src="images/logo.png"></h1>
+    
+                <nav>
+                    <ul>
+                        <li class="itens"><a href="index.html">Home</a></li>
+                        <li class="itens"><a href="produtos.html">Produtos</a></li>
+                        <li class="itens"><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <div class="label_input">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="label_input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                </div>
+                <div class="label_input">
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="text" name="telefone" id="telefone" placeholder="(22) 99999-9999">
+                </div>
+                <div id="enviar">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <img src="images/logo-branco.png">
+            <p id="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>
