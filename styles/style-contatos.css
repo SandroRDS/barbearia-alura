@@ -101,15 +101,13 @@ input[type="radio"]
     border: 2px solid rgb(31, 23, 87);
     color: aliceblue;
     cursor: pointer;
-    transition-property: font-size, box-shadow, height, width, background-color;
+    transition-property: all;
     transition-duration: 500ms;
 }
 
 #enviar input:hover
 {
-    font-size: 16px;
+    transform: scale(1.1) rotate(-2deg);
     box-shadow: 0px 0px 20px 5px #373676d9;
     background-color: #6766c3d9;
-    width: 180px;
-    height: 7vh;
 }

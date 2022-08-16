@@ -8,6 +8,7 @@ main .container
 
 main .itens
 {
+    position: relative;
     border: 3px solid black;
     text-align: center;
     display: inline-block;
@@ -18,38 +19,21 @@ main .itens
     box-sizing: border-box;
     vertical-align: top;
     cursor: pointer;
-    transition-property: height, width, border, box-shadow;
+    transition-property: all;
     transition-duration: 500ms;
 }
 
 main .itens:hover
 {
     border: 4px solid #2b2a6ad9;
-    box-shadow: 9px 9px 15px rgb(45, 45, 78);
-    width: 31%;
-    height: 500px;
+    box-shadow: rgb(45 45 78) 0px 20px 15px;
+    transform: scale(1.05);
+    bottom: 3vh;
 }
 
 main .itens:active
 {
     border-color: #4354b8;
-}
-
-main .itens:hover h2 
-{
-    font-size: 35px;
-    color: #2b2a6ad9;
-}
-
-main .itens:hover .descricao
-{
-    font-size: 21px;
-}
-
-main .itens:hover .preco
-{
-    font-size: 25px;
-    color: #2b2a6ad9;
 }
 
 main ul li:nth-child(2)
@@ -63,14 +47,12 @@ main h2
     font-size: 30px;
     font-weight: bold;
     margin: 10% 0px;
-    transition: font-size 500ms;
 }
 
 main .descricao
 {
     font-size: 18px;
     margin-top: 12%;
-    transition: font-size 500ms;
 }
 
 main .preco
@@ -78,5 +60,4 @@ main .preco
     font-weight: bold;
     font-size: 22px;
     margin-top: 4%;
-    transition: font-size 500ms;
 }
