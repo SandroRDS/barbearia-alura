@@ -18,7 +18,8 @@ main .itens
     box-sizing: border-box;
     vertical-align: top;
     cursor: pointer;
-    transition: height 500ms, width 500ms, border 150ms, box-shadow 500ms;
+    transition-property: height, width, border, box-shadow;
+    transition-duration: 500ms;
 }
 
 main .itens:hover
