@@ -1,0 +1,146 @@
+.cabecalho
+{
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    background-image: var(--gradiente-azul-escuro);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cabecalho__menu
+{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    padding: 0.2em;
+    border-radius: 8px;
+    transition: all 250ms;
+
+    background-image: url(/images/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 52px 52px;
+
+    position: absolute;
+    left: 1em;
+}
+
+.cabecalho__menu--ativo
+{
+    background-color: var(--apricot);
+    background-image: url(/images/close.svg);
+    background-size: 40px 40px;
+}
+
+.cabecalho__titulo
+{
+    height: 83px;
+    width: 59px;
+}
+
+.cabecalho__titulo__logo
+{
+    display: block;
+    height: inherit;
+    width: inherit;
+    background-image: url(/images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecalho__navbar
+{
+    position: absolute;
+    left: 1.5em;
+    top: calc(100% + 1em);
+    z-index: 5;
+}
+
+.cabecalho__navbar__lista
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    transition: all 300ms;
+    opacity: 100%;
+}
+
+.cabecalho__navbar__lista--escondido
+{
+    display: none;
+}
+
+.cabecalho__navbar__lista--transparente
+{
+    opacity: 0;
+}
+
+.cabecalho__navbar__lista__itens
+{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    transform: translateY(0);
+    transition: all 400ms ease-in-out;
+}
+
+.item_produto--recolhido
+{
+    transform: translateY(-58px);
+}
+
+.item_horario--recolhido
+{
+    transform: translateY(-116px);
+}
+
+.cabecalho__navbar__lista__itens__icone
+{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--shady-lady);
+    padding: 0.5em;
+    border-radius: 12px;
+}
+
+
+.item_home .cabecalho__navbar__lista__itens__icone
+{
+    background-image: url(/images/home-icone.svg);
+}
+
+.item_produto .cabecalho__navbar__lista__itens__icone
+{
+    background-image: url(/images/produtos-icone.png);
+}
+
+.item_horario .cabecalho__navbar__lista__itens__icone
+{
+    background-image: url(/images/horario-icone.svg);
+}
+
+.cabecalho__navbar__lista__itens__label
+{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ebony-clay);
+    transform: translateX(0);
+    transition: all 400ms ease-in-out;
+}
+
+.itens_label--recolhido
+{
+    transform: translateX(-1em);
+}
