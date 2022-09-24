@@ -18,8 +18,7 @@
     display: inline-block;
     width: 52px;
     height: 52px;
-    padding: 0.2em;
-    border-radius: 8px;
+    border-radius: 100%;
     transition: all 250ms;
 
     background-image: url(/images/menu.svg);
