@@ -4,18 +4,20 @@
 
 :root
 {
-    --gradiente-azul-escuro: linear-gradient(to bottom, #292643, #302d4d, #363458, #3d3b63, #44426e);;
-    --apricot: #E99E75;
-    --fiord: #44426E;
-    --rum: #776483;
-    --shady-lady: #BBAAB8;
-    --ebony-clay: #292643;
+    --gradiente-roxo-escuro: linear-gradient(to bottom, #8daec3, #98bbca, #a6c7d1, #b5d3d8, #c5dfe0);
+    --roxo-claro: #81749c;
+    --roxo-escuro: #4d3e6b;
+    --roxo-escuro-transparente: #40325aa1;
+    --azul-escuro: #8daec3;
+    --azul-claro: #c5dfe0;
+    --azul-claro-transparente: #c5dfe017;
+    --amarelo-claro: #fcfce2;
+    --cinza-claro: #CDCDCD;
 
-    --cinza-claro: #dfdfdf;
+    --preto-filtro-banner: rgba(1, 15, 17, 0.521);
 }
 
 body
 {
     font-family: 'Source Serif Pro';
-    background-color: var(--fiord);
 }

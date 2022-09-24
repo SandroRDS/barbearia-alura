@@ -3,10 +3,11 @@
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
-    background-image: var(--gradiente-azul-escuro);
-    box-shadow: 0 2px 15px var(--ebony-clay);
+    background: var(--gradiente-roxo-escuro);
+    box-shadow: 0 2px 15px black;
     position: sticky;
     top: 0;
+    z-index: 5;
 
     display: flex;
     align-items: center;
@@ -33,7 +34,6 @@
 
 .cabecalho__menu--ativo
 {
-    background-color: var(--shady-lady);
     background-image: url(/images/close.svg);
     background-size: 40px 40px;
 }
@@ -111,7 +111,7 @@
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--shady-lady);
+    background-color: var(--azul-escuro);
     padding: 0.5em;
     border-radius: 12px;
 }
