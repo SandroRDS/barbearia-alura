@@ -3,39 +3,20 @@
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
-    background: var(--gradiente-roxo-escuro);
-    box-shadow: 0 2px 15px black;
-    position: sticky;
+    border-radius: 0px 0px 8px 8px;
+    
+    background: var(--branco-background-header);
+    box-shadow: 0 4px 30px var(--preto-sombra-header);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    
+    position: absolute;
     top: 0;
     z-index: 5;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-
-}
-
-.cabecalho__menu
-{
-    display: inline-block;
-    width: 52px;
-    height: 52px;
-    border-radius: 100%;
-    transition: all 250ms;
-
-    background-image: url(/images/menu.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 52px 52px;
-
-    position: absolute;
-    left: 1em;
-}
-
-.cabecalho__menu--ativo
-{
-    background-image: url(/images/close.svg);
-    background-size: 40px 40px;
+    justify-content: space-between;
 }
 
 .cabecalho__titulo
@@ -55,32 +36,13 @@
     background-repeat: no-repeat;
 }
 
-.cabecalho__navbar
-{
-    position: absolute;
-    left: 1.5em;
-    top: calc(100% + 1em);
-    z-index: 5;
-}
-
 .cabecalho__navbar__lista
 {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
+    gap: .8em;
 
     transition: all 300ms;
     opacity: 100%;
-}
-
-.cabecalho__navbar__lista--escondido
-{
-    display: none;
-}
-
-.cabecalho__navbar__lista--transparente
-{
-    opacity: 0;
 }
 
 .cabecalho__navbar__lista__itens
@@ -93,59 +55,31 @@
     transition: all 400ms ease-in-out;
 }
 
-.item_produto--recolhido
-{
-    transform: translateY(-58px);
-}
-
-.item_horario--recolhido
-{
-    transform: translateY(-116px);
-}
-
 .cabecalho__navbar__lista__itens__icone
 {
     display: inline-block;
-    width: 26px;
-    height: 26px;
-    background-size: 24px 24px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--azul-escuro);
+    background-color: var(--laranja-icone-header);
     padding: 0.5em;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 
 .item_home .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/home-icone.svg);
+    background-image:  url(/images/home-icone.svg);
 }
 
 .item_produto .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/produtos-icone.png);
+    background-image: url(/images/produtos-icone.svg);
 }
 
 .item_horario .cabecalho__navbar__lista__itens__icone
 {
     background-image: url(/images/horario-icone.svg);
-}
-
-.cabecalho__navbar__lista__itens__label
-{
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--cinza-claro);
-    transform: translateX(0);
-    transition: all 400ms ease-in-out;
-
-    background-color: rgb(54, 51, 51);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.itens_label--recolhido
-{
-    transform: translateX(-1em);
 }
