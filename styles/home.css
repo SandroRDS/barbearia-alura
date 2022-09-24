@@ -31,8 +31,8 @@
 .secao1__conteudo
 {
     position: absolute;
-    top: 0;
-    height: 100%;
+    bottom: 0;
+    height: calc(100% - 115px);
     width: 100%;
     
     display: flex;
@@ -41,19 +41,37 @@
     justify-content: space-around;
 }
 
-.secao1__conteudo__titulo
+.secao1__conteudo__cabecalho
 {
-    font-size: 1.8em;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.secao1__conteudo__cabecalho__titulo
+{
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+    font-weight: 600;
     color: var(--cinza-claro);
+    width: 10ch;
+    text-align: center;
+}
+
+.secao1__conteudo__cabecalho__texto
+{
+    text-align: center;
+    font-weight: 300;
 }
 
 .secao1__conteudo__botao
 {
     text-decoration: none;
+    text-align: center;
     color: var(--cinza-claro);
     border: 1px solid var(--amarelo-claro);
     padding: 1em 2em;
     border-radius: 0;
-    background-color: var(--azul-claro-transparente);
+    background-color: var(--cinza-claro-transparente);
 }

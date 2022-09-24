@@ -71,15 +71,15 @@
 
 .item_home .cabecalho__navbar__lista__itens__icone
 {
-    background-image:  url(/images/home-icone.svg);
+    background-image:  url(/images/home-icone.png);
 }
 
 .item_produto .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/produtos-icone.svg);
+    background-image: url(/images/produtos-icone.png);
 }
 
 .item_horario .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/horario-icone.svg);
+    background-image: url(/images/horario-icone.png);
 }

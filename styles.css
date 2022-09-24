@@ -1,15 +1,13 @@
 @import url(styles/header.css);
 @import url(styles/footer.css);
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root
 {
-    --gradiente-roxo-escuro: linear-gradient(to bottom, #8daec3, #98bbca, #a6c7d1, #b5d3d8, #c5dfe0);
-    --roxo-claro: #81749c;
-    --roxo-escuro: #4d3e6b;
-    --roxo-escuro-transparente: #40325aa1;
     --amarelo-claro: #fcfce2;
     --cinza-claro: #CDCDCD;
+    --cinza-claro-transparente: #8f8f8f13;
 
     --preto-filtro-banner: rgba(1, 15, 17, 0.521);
     --preto-sombra-header: rgba(0, 0, 0, 0.1);
@@ -19,5 +17,6 @@
 
 body
 {
-    font-family: 'Source Serif Pro';
+    font-family: 'Montserrat';
+    color: var(--cinza-claro);
 }
