@@ -139,6 +139,10 @@
     color: var(--cinza-claro);
     transform: translateX(0);
     transition: all 400ms ease-in-out;
+
+    background-color: rgb(54, 51, 51);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .itens_label--recolhido
