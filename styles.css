@@ -8,15 +8,20 @@
     --amarelo-claro: #fcfce2;
     --cinza-claro: #CDCDCD;
     --cinza-claro-transparente: #8f8f8f13;
+    --cinza-escuro: #272727;
+    --laranja-claro: #F0B207CE;
+    --laranja-medio: #ff8100;
 
     --preto-filtro-banner: rgba(1, 15, 17, 0.521);
-    --preto-sombra-header: rgba(0, 0, 0, 0.1);
+    --preto-sombra-header: rgba(0, 0, 0, 0.85);
     --branco-background-header: rgba(255, 255, 255, 0.05);
-    --laranja-icone-header: #F0B207CE;
+
+    --fonte-titulo: 'Bebas Neue';
+    --fonte-texto: 'Montserrat';
 }
 
 body
 {
-    font-family: 'Montserrat';
+    font-family: var(--fonte-texto);
     color: var(--cinza-claro);
 }

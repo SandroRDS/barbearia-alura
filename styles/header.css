@@ -6,7 +6,7 @@
     border-radius: 0px 0px 8px 8px;
     
     background: var(--branco-background-header);
-    box-shadow: 0 4px 30px var(--preto-sombra-header);
+    box-shadow: 0px 1px 15px var(--preto-sombra-header);
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
     
@@ -58,14 +58,18 @@
 .cabecalho__navbar__lista__itens__icone
 {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
+    width: 35px;
+    height: 35px;
+    
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--laranja-icone-header);
-    padding: 0.5em;
+    
+    padding: 0.6em;
     border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
 }
 
 
