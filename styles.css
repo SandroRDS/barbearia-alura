@@ -4,15 +4,18 @@
 
 :root
 {
-    --gradiente-azul-escuro: linear-gradient(to right top, #292643, #302d4d, #363458, #3d3b63, #44426e);
+    --gradiente-azul-escuro: linear-gradient(to bottom, #292643, #302d4d, #363458, #3d3b63, #44426e);;
     --apricot: #E99E75;
     --fiord: #44426E;
     --rum: #776483;
     --shady-lady: #BBAAB8;
     --ebony-clay: #292643;
+
+    --cinza-claro: #dfdfdf;
 }
 
 body
 {
     font-family: 'Source Serif Pro';
+    background-color: var(--fiord);
 }

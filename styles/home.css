@@ -1,0 +1,15 @@
+.secao1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1em;
+}
+
+.secao1__titulo
+{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--cinza-claro);
+}
