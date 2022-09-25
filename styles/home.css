@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
 
+    color: var(--cinza-claro);
     width: 100%;
     position: relative;
 
@@ -57,7 +58,6 @@
     font-family: 'Bebas Neue';
     font-size: 3em;
     font-weight: 600;
-    color: var(--cinza-claro);
     width: 10ch;
     text-align: center;
 }
@@ -72,8 +72,8 @@
 {
     text-decoration: none;
     text-align: center;
-    color: var(--cinza-claro);
     border: 1px solid var(--amarelo-claro);
+    color: var(--cinza-claro);
     padding: 1em 2em;
     border-radius: 0;
     background-color: var(--cinza-claro-transparente);
@@ -89,17 +89,16 @@
     box-sizing: border-box;
     padding: 2em;
     background-color: var(--cinza-escuro);
+    color: var(--cinza-claro);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     gap: 2em;
 }
 
 .secao2__titulo
 {
     width: 100%;
-    text-align: left;
     font-size: 2em;
     font-family: var(--fonte-titulo);
     color: var(--laranja-claro);
@@ -153,6 +152,7 @@
     box-sizing: border-box;
     padding: 2em;
     background-color: #FFFFFF;
+    color: var(--cinza-escuro);
 
     display: grid;
     gap: 1em;
@@ -175,7 +175,6 @@
 {
     font-weight: 500;
     text-align: center;
-    color: var(--cinza-escuro);
     line-height: 22px;
     font-size: .9em;
 }
@@ -184,6 +183,7 @@
 {
     width: 100%;
     height: 300px;
+    border: 0;
 }
 
 .secao3__endereco
@@ -192,4 +192,81 @@
     text-align: center;
     font-weight: 400;
     font-size: .8em;
+    font-style: italic;
+}
+
+
+
+/*----- Seção 4 -----*/
+
+.secao4
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: var(--cinza-escuro);
+    color: var(--cinza-claro);
+
+    display: grid;
+    justify-items: center;
+    gap: 2em;
+}
+
+.secao4__titulo
+{
+    width: 100%;
+    font-size: 2em;
+    font-family: var(--fonte-titulo);
+    color: var(--laranja-claro);
+}
+
+.secao4__imagem
+{
+    width: 90%;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0);
+}
+
+.secao4__lista
+{
+    width: 100%;
+
+    display: grid;
+    gap: 0.5em;
+}
+
+.secao4__lista__itens
+{
+    position: relative;
+    font-weight: 500;
+    font-style: italic;
+
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.secao4__lista__itens::before
+{
+    content: '\2022';
+    font-size: 2.5em;
+    color: var(--laranja-medio);
+}
+
+.secao4__lista__itens::after
+{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background-color: var(--laranja-medio);
+}
+
+.secao4__video
+{
+    width: 100%;
+    height: 300px;
 }
