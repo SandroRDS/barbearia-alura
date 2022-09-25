@@ -1,0 +1,24 @@
+.rodape
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    background-image: url(/images/bg.jpg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.rodape__logo
+{
+    width: 40%;
+}
+
+.rodape__copyright
+{
+    color: var(--cinza-claro);
+    font-size: 0.7em;
+}
