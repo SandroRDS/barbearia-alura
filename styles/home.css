@@ -2,81 +2,76 @@
 
 .secao1
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display               : flex;
+    flex-direction        : column;
+    align-items           : center;
 
-    color: var(--cinza-claro);
-    width: 100%;
-    position: relative;
+    color                 : var(--cinza-claro);
+    width                 : 100%;
+    position              : relative;
 
-    background-image: url(/images/banner2.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image      : url(/images/banner2.jpg);
+    background-size       : cover;
+    background-position   : center;
 }
 
 .secao1::before
 {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: var(--preto-filtro-banner);
-    position: absolute;
-}
-
-.secao1__banner
-{
-    width: 100%;
+    content            : '';
+    display            : block;
+    width              : 100%;
+    height             : 100%;
+    background-color   : var(--preto-filtro-banner);
+    position           : absolute;
 }
 
 .secao1__conteudo
 {
-    margin-top: 115px;
-    z-index: 1;
-    width: 100%;
-    min-height: 80vh;
-    box-sizing: border-box;
-    padding: 1em;
+    margin-top        : 115px;
+    z-index           : 1;
+    width             : 100%;
+    min-height        : 80vh;
+    box-sizing        : border-box;
+    padding           : 1em;
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    display           : flex;
+    flex-direction    : column;
+    align-items       : center;
+    justify-content   : space-around;
 }
 
 .secao1__conteudo__cabecalho
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
+    display          : flex;
+    flex-direction   : column;
+    align-items      : center;
+    gap              : 1.5em;
 }
 
 .secao1__conteudo__cabecalho__titulo
 {
-    font-family: 'Bebas Neue';
-    font-size: 3em;
-    font-weight: 600;
-    width: 10ch;
-    text-align: center;
+    font-family   : 'Bebas Neue';
+    font-size     : 3em;
+    font-weight   : 600;
+    width         : 10ch;
+    text-align    : center;
 }
 
 .secao1__conteudo__cabecalho__texto
 {
-    text-align: center;
-    font-weight: 300;
+    text-align    : center;
+    font-weight   : 300;
 }
 
 .secao1__conteudo__botao
 {
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid var(--amarelo-claro);
-    color: var(--cinza-claro);
-    padding: 1em 2em;
-    border-radius: 0;
-    background-color: var(--cinza-claro-transparente);
+    text-decoration    : none;
+    text-align         : center;
+    border             : 1px solid var(--amarelo-claro);
+    color              : var(--cinza-claro);
+    padding            : 1em 2em;
+    border-radius      : 0;
+    background-color   : var(--cinza-claro-transparente);
 }
 
 
@@ -85,61 +80,61 @@
 
 .secao2
 {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em;
-    background-color: var(--cinza-escuro);
-    color: var(--cinza-claro);
+    width              : 100%;
+    box-sizing         : border-box;
+    padding            : 2em;
+    background-color   : var(--cinza-escuro);
+    color              : var(--cinza-claro);
 
-    display: grid;
-    justify-items: center;
-    gap: 2em;
+    display            : grid;
+    justify-items      : center;
+    gap                : 2em;
 }
 
 .secao2__titulo
 {
-    width: 100%;
-    font-size: 2em;
-    font-family: var(--fonte-titulo);
-    color: var(--laranja-claro);
+    width         : 100%;
+    font-size     : 2em;
+    font-family   : var(--fonte-titulo);
+    color         : var(--laranja-claro);
 }
 
 .secao2__imagem
 {
-    width: 40%;
-    border-radius: 14px;
-    box-shadow: 0px 0px 10px 2px rgb(0 0 0);
+    width           : 40%;
+    border-radius   : 14px;
+    box-shadow      : 0px 0px 10px 2px rgb(0 0 0);
 }
 
 .secao2__descricao
 {
-    width: 100%;
-    text-align: justify;
-    line-height: 22px;
-    font-weight: 200;
+    width         : 100%;
+    text-align    : justify;
+    line-height   : 22px;
+    font-weight   : 200;
 
-    display: grid;
-    gap: 1em;
+    display       : grid;
+    gap           : 1em;
 }
 
 .secao2__descricao__paragrafo .texto_destaque
 {
-    font-weight: 500;
-    color: var(--laranja-claro);
+    font-weight   : 500;
+    color         : var(--laranja-claro);
 }
 
 .secao2__descricao__paragrafo .texto_citacao
 {
-    font-weight: 500;
-    color: var(--laranja-claro);
-    font-style: italic;
+    font-weight   : 500;
+    color         : var(--laranja-claro);
+    font-style    : italic;
 }
 
 .secao2__descricao__paragrafo .texto_enfase
 {
-    font-weight: 400;
-    color: var(--laranja-medio);
-    font-style: italic;
+    font-weight   : 400;
+    color         : var(--laranja-medio);
+    font-style    : italic;
 }
 
 
@@ -148,51 +143,51 @@
 
 .secao3
 {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em;
-    background-color: #FFFFFF;
-    color: var(--cinza-escuro);
+    width              : 100%;
+    box-sizing         : border-box;
+    padding            : 2em;
+    background-color   : #FFFFFF;
+    color              : var(--cinza-escuro);
 
-    display: grid;
-    gap: 1em;
+    display            : grid;
+    gap                : 1em;
 }
 
 .secao3__titulo
 {
-    font-family: var(--fonte-titulo);
-    font-size: 2em;
-    color: var(--laranja-claro);
-    text-align: center;
+    font-family   : var(--fonte-titulo);
+    font-size     : 2em;
+    color         : var(--laranja-claro);
+    text-align    : center;
 }
 
 .material-symbols-outlined
 {
-    color: red;
+    color   : red;
 }
 
 .secao3__descricao
 {
-    font-weight: 500;
-    text-align: center;
-    line-height: 22px;
-    font-size: .9em;
+    font-weight   : 500;
+    text-align    : center;
+    line-height   : 22px;
+    font-size     : .9em;
 }
 
 .secao3__mapa
 {
-    width: 100%;
-    height: 300px;
-    border: 0;
+    width    : 100%;
+    height   : 300px;
+    border   : 0;
 }
 
 .secao3__endereco
 {
-    color: var(--cinza-escuro);
-    text-align: center;
-    font-weight: 400;
-    font-size: .8em;
-    font-style: italic;
+    color         : var(--cinza-escuro);
+    text-align    : center;
+    font-weight   : 400;
+    font-size     : .8em;
+    font-style    : italic;
 }
 
 
@@ -201,72 +196,72 @@
 
 .secao4
 {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em;
-    background-color: var(--cinza-escuro);
-    color: var(--cinza-claro);
+    width              : 100%;
+    box-sizing         : border-box;
+    padding            : 2em;
+    background-color   : var(--cinza-escuro);
+    color              : var(--cinza-claro);
 
-    display: grid;
-    justify-items: center;
-    gap: 2em;
+    display            : grid;
+    justify-items      : center;
+    gap                : 2em;
 }
 
 .secao4__titulo
 {
-    width: 100%;
-    font-size: 2em;
-    font-family: var(--fonte-titulo);
-    color: var(--laranja-claro);
+    width         : 100%;
+    font-size     : 2em;
+    font-family   : var(--fonte-titulo);
+    color         : var(--laranja-claro);
 }
 
 .secao4__imagem
 {
-    width: 90%;
-    border-radius: 14px;
-    box-shadow: 0px 0px 10px 2px rgb(0 0 0);
+    width           : 90%;
+    border-radius   : 14px;
+    box-shadow      : 0px 0px 10px 2px rgb(0 0 0);
 }
 
 .secao4__lista
 {
-    width: 100%;
+    width     : 100%;
 
-    display: grid;
-    gap: 0.5em;
+    display   : grid;
+    gap       : 0.5em;
 }
 
 .secao4__lista__itens
 {
-    position: relative;
-    font-weight: 500;
-    font-style: italic;
+    position      : relative;
+    font-weight   : 500;
+    font-style    : italic;
 
-    display: flex;
-    align-items: center;
-    gap: 10%;
+    display       : flex;
+    align-items   : center;
+    gap           : 10%;
 }
 
 .secao4__lista__itens::before
 {
-    content: '\2022';
-    font-size: 2.5em;
-    color: var(--laranja-medio);
+    content     : '\2022';
+    font-size   : 2.5em;
+    color       : var(--laranja-medio);
 }
 
 .secao4__lista__itens::after
 {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    background-color: var(--laranja-medio);
+    content            : '';
+    display            : block;
+    height             : 1px;
+    width              : 90%;
+    position           : absolute;
+    bottom             : 0;
+    left               : 10%;
+    background-color   : var(--laranja-medio);
 }
 
 .secao4__video
 {
-    width: 100%;
-    height: 300px;
+    width    : 100%;
+    height   : 300px;
 }

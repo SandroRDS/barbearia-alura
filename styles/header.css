@@ -1,89 +1,89 @@
 .cabecalho
 {
-    width: 100%;
-    padding: 1em;
-    box-sizing: border-box;
-    border-radius: 0px 0px 8px 8px;
+    width             : 100%;
+    padding           : 1em;
+    box-sizing        : border-box;
+    border-radius     : 0px 0px 8px 8px;
     
-    background: var(--branco-background-header);
-    box-shadow: 0px 1px 15px var(--preto-sombra-header);
-    backdrop-filter: blur(12.5px);
-    -webkit-backdrop-filter: blur(12.5px);
+    background        : var(--branco-background-header);
+    box-shadow        : 0px 1px 15px var(--preto-sombra-header);
+    backdrop-filter   : blur(12.5px);
     
-    position: absolute;
-    top: 0;
-    z-index: 5;
+    position          : absolute;
+    top               : 0;
+    z-index           : 5;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display           : flex;
+    align-items       : center;
+    justify-content   : space-between;
 }
 
 .cabecalho__titulo
 {
-    height: 83px;
-    width: 59px;
+    height   : 83px;
+    width    : 59px;
 }
 
 .cabecalho__titulo__logo
 {
-    display: block;
-    height: inherit;
-    width: inherit;
-    background-image: url(/images/logo.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display               : block;
+    height                : inherit;
+    width                 : inherit;
+    
+    background-image      : url(/images/logo.png);
+    background-size       : contain;
+    background-position   : center;
+    background-repeat     : no-repeat;
 }
 
 .cabecalho__navbar__lista
 {
-    display: flex;
-    gap: .8em;
+    display      : flex;
+    gap          : .8em;
 
-    transition: all 300ms;
-    opacity: 100%;
+    transition   : all 300ms;
+    opacity      : 100%;
 }
 
 .cabecalho__navbar__lista__itens
 {
-    display: flex;
-    align-items: center;
-    gap: 1em;
+    display       : flex;
+    align-items   : center;
+    gap           : 1em;
 
-    transform: translateY(0);
-    transition: all 400ms ease-in-out;
+    transform     : translateY(0);
+    transition    : all 400ms ease-in-out;
 }
 
 .cabecalho__navbar__lista__itens__icone
 {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
+    display               : inline-block;
+    width                 : 35px;
+    height                : 35px;
     
-    background-size: 35px 35px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--laranja-icone-header);
+    background-size       : 35px 35px;
+    background-repeat     : no-repeat;
+    background-position   : center;
+    background-color      : var(--laranja-icone-header);
     
-    padding: 0.6em;
-    border-radius: 8px;
-    border: 1px solid white;
-    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    padding               : 0.6em;
+    border-radius         : 8px;
+    border                : 1px solid white;
+    box-shadow            : 0px 0px 8px 1px rgb(0 0 0);
 }
 
 
 .item_home .cabecalho__navbar__lista__itens__icone
 {
-    background-image:  url(/images/home-icone.png);
+    background-image   : url(/images/home-icone.png);
 }
 
 .item_produto .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/produtos-icone.png);
+    background-image   : url(/images/produtos-icone.png);
 }
 
 .item_horario .cabecalho__navbar__lista__itens__icone
 {
-    background-image: url(/images/horario-icone.png);
+    background-image   : url(/images/horario-icone.png);
 }
