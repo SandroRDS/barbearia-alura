@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Produtos - Barbearia Alura</title>
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/style-produtos.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1><img src="images/logo.png" alt="Logo da Barbearia Alura"></h1>
-    
-                <nav>
-                    <ul>
-                        <li class="itens"><a href="index.html">Home</a></li>
-                        <li class="itens"><a href="produtos.html">Produtos</a></li>
-                        <li class="itens"><a href="contatos.html">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sandro Rosa de Souza">
+    <meta name="description" content="Bem-vindo à Barbearia Alura! Funcionamos segunda, quarta e sexta, das 8 às 20h, com horário de almoço de 12h até 13h. Venha agendar um horário e conhecer nossos serviços de qualidade!">
 
-        <main>
-            <fieldset class="container">
-                <ul>
-                    <li class="itens">
-                        <h2>Cabelo</h2>
-                        <img src="images/cabelo.jpg">
-                        <p class="descricao">Na tesoura ou na máquina, como o cliente preferir</p>
-                        <p class="preco">R$ 25,00</p>
-                    </li>
-                    <li class="itens">
-                        <h2>Barba</h2>
-                        <img src="images/barba.jpg">
-                        <p class="descricao">Corte e desenho profissional de barba</p>
-                        <p class="preco">R$ 18,00</p>
-                    </li>
-                    <li class="itens">
-                        <h2>Cabelo + Barba</h2>
-                        <img src="images/cabelo+barba.jpg">
-                        <p class="descricao">Pacote completo de cabelo e barba</p>
-                        <p class="preco">R$ 35,00</p>
-                    </li>
-                </ul>
-            </div>
-        </main>
+    <!--Link Tags-->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/servicos.css">
 
-        <footer>
-            <img src="images/logo-branco.png" alt="Logo da Barbearia Alura">
-            <p id="copyright">&copy; Copyright Barbearia Alura - 2022</p>
-        </footer>
-    </body>
+    <title>Serviços - Barbearia Alura</title>
+</head>
+<body>
+     <!--Cabeçalho-->
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">
+            <a class="cabecalho__titulo__logo" href="/index.html"></a>
+        </h1>
+
+        <nav class="cabecalho__navbar">
+            <ul class="cabecalho__navbar__lista">
+                <li class="cabecalho__navbar__lista__itens item_home">
+                    <a class="cabecalho__navbar__lista__itens__icone" href="/index.html"></a>
+                </li>
+                <li class="cabecalho__navbar__lista__itens item_produto">
+                    <a class="cabecalho__navbar__lista__itens__icone" href="/servicos.html"></a>
+                </li>
+                <li class="cabecalho__navbar__lista__itens item_horario">
+                    <a class="cabecalho__navbar__lista__itens__icone" href="/horarios.html"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        
+        <!--Seção 1-->
+        <section class="secao1">
+            <div class="secao1__conteudo">
+                <header class="secao1__conteudo__cabecalho">
+                    <h2 class="secao1__conteudo__cabecalho__titulo">Serviços</h2>
+                    <p class="secao1__conteudo__cabecalho__texto">Nossos serviços oferecem profissionais experientes e antenados às novas tendências!</p>
+                </header>
+            </div>
+        </section>
+
+        <!--Seção 2-->
+        <section class="secao2">
+            <ul class="secao2__lista">
+                <li class="secao2__lista__itens">
+                    <img class="secao2__lista__itens__imagem" src="/images/cabelo.jpg" alt="Cabelo">
+                    <h3 class="secao2__lista__itens__titulo">Cabelo</h2>
+                    <p class="secao2__lista__itens__descricao">Na tesoura ou na máquina, como o cliente preferir</p>
+                    <p class="secao2__lista__itens__valor">R$ 25,00</p>
+                </li>
+                <li class="secao2__lista__itens">
+                    <img class="secao2__lista__itens__imagem" src="/images/barba.jpg" alt="Barba">
+                    <h3 class="secao2__lista__itens__titulo">Barba</h3>
+                    <p class="secao2__lista__itens__descricao">Corte e desenho profissional de barba</p>
+                    <p class="secao2__lista__itens__valor">R$ 18,00</p>
+                </li>
+                <li class="secao2__lista__itens">
+                    <img class="secao2__lista__itens__imagem" src="/images/cabelo+barba.jpg" alt="Cabelo + Barba">
+                    <h3 class="secao2__lista__itens__titulo">Cabelo + Barba</h3>
+                    <p class="secao2__lista__itens__descricao">Pacote completo de cabelo e barba</p>
+                    <p class="secao2__lista__itens__valor">R$ 35,00</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <img class="rodape__logo" src="/images/logo-branco.png">
+        <small class="rodape__copyright">&copy; Copyright Barbearia Alura - 2022</small>
+    </footer>
+</body>
 </html>
