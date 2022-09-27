@@ -352,6 +352,9 @@
 {
     border: none;
     padding: 0;
+
+    display: flex;
+    align-items: center;
 }
 
 .secao3__formulario__campo__label
