@@ -22,19 +22,22 @@
         <!--Cabeçalho-->
         <header class="cabecalho">
             <h1 class="cabecalho__titulo">
-                <a class="cabecalho__titulo__logo" href="/index.html"></a>
+                <a class="cabecalho__titulo__logo" href="/index.html" title="Página Inicial da Barbearia Alura"></a>
             </h1>
     
             <nav class="cabecalho__navbar">
                 <ul class="cabecalho__navbar__lista">
                     <li class="cabecalho__navbar__lista__itens item_home">
                         <a class="cabecalho__navbar__lista__itens__icone" href="/index.html"></a>
+                        <a class="cabecalho__navbar__lista__itens__texto" href="/index.html" title="Página Inicial">Home</a>
                     </li>
                     <li class="cabecalho__navbar__lista__itens item_produto">
                         <a class="cabecalho__navbar__lista__itens__icone" href="/servicos.html"></a>
+                        <a class="cabecalho__navbar__lista__itens__texto" href="/servicos.html" title="Nossos serviços e preços">Serviços</a>
                     </li>
                     <li class="cabecalho__navbar__lista__itens item_horario">
                         <a class="cabecalho__navbar__lista__itens__icone" href="/horarios.html"></a>
+                        <a class="cabecalho__navbar__lista__itens__texto" href="/horarios.html" title="Agendar atendimento">Agendamento</a>
                     </li>
                 </ul>
             </nav>
@@ -57,7 +60,10 @@
             <!--Seção 2-->
             <section class="secao2">
                 <h2 class="secao2__titulo">Sobre Nós</h2>
-                <img class="secao2__imagem" src="/images/utensilios.jpg" alt="Utensílios de Barbearia">
+                <picture class="secao2__fotografia">
+                    <source media="(min-width: 1024px)" srcset="/images/utensilios-desktop.jpg">
+                    <img class="secao2__fotografia__imagem" src="/images/utensilios.jpg" alt="Utensílios de Barbearia">
+                </picture>
                 <div class="secao2__descricao">
                     <p class="secao2__descricao__paragrafo">Localizada no <b class="texto_destaque">coração da cidade</b>, a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
                     <p class="secao2__descricao__paragrafo">Nossa missão é: <q class="texto_citacao">"Proporcionar auto-estima e qualidade de vida aos clientes"</q>.</p>

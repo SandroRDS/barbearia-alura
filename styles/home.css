@@ -75,6 +75,36 @@
 }
 
 
+@media screen and (min-width: 1024px) 
+{
+    .secao1__conteudo
+    {
+        min-height: 60vh;
+    }
+
+    .secao1__conteudo__cabecalho__titulo
+    {
+        font-size: 4em;
+    }
+
+    .secao1__conteudo__cabecalho__texto
+    {
+        font-size: 1.3em;
+    }
+
+    .secao1__conteudo__botao
+    {
+        font-size: 1.1em;
+        transition: all 350ms;
+    }
+
+    .secao1__conteudo__botao:hover
+    {
+        color: var(--laranja-claro);
+        background-color: var(--cinza-escuro-semitransparente);
+    }
+}
+
 
 /*----- Seção 2 -----*/
 
@@ -99,7 +129,12 @@
     color         : var(--laranja-claro);
 }
 
-.secao2__imagem
+.secao2__fotografia
+{
+    text-align: center;
+}
+
+.secao2__fotografia__imagem
 {
     width           : 40%;
     border-radius   : 14px;
@@ -137,6 +172,46 @@
     font-style    : italic;
 }
 
+
+@media screen and (min-width: 1024px) 
+{
+    .secao2
+    {
+        grid-template-columns: 1fr 25%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .secao2__titulo
+    {
+        padding-top: 5%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 3em;
+    }
+
+    .secao2__fotografia
+    {
+        grid-row: span 2;
+    }
+
+    .secao2__fotografia__imagem
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: -6px 0px 12px var(--preto-transparente);
+    }
+
+    .secao2__descricao
+    {
+        box-sizing: border-box;
+        padding: 10%;
+        padding-top: 5%;
+        font-size: 1.2em;
+        gap: 0.5em;
+    }
+}
 
 
 /*----- Seção 3 -----*/
@@ -190,6 +265,35 @@
     font-style    : italic;
 }
 
+
+@media screen and (min-width: 1024px) 
+{
+    .secao3
+    {
+        justify-items: center;
+    }
+
+    .secao3__titulo
+    {
+        font-size: 3em;
+    }
+
+    .secao3 .material-symbols-outlined
+    {
+        color   : red;
+        font-size: 36px;
+    }
+
+    .secao3__descricao
+    {
+        font-size: 1.1em;
+    }
+
+    .secao3__mapa
+    {
+        width: 50%;
+    }
+}
 
 
 /*----- Seção 4 -----*/
@@ -262,6 +366,52 @@
 
 .secao4__video
 {
-    width    : 100%;
-    height   : 300px;
+    width        : 100%;
+    height       : 300px;
+    box-shadow   : 0px 0px 10px 5px var(--preto-transparente);
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .secao4
+    {
+        padding: 0;
+        grid-template-columns: 55% 1fr;
+        gap: 0;
+    }
+
+    .secao4__titulo
+    {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 5%;
+        background-color: rgb(54, 54, 54);
+    }
+
+    .secao4__imagem
+    {
+        grid-column: 1;
+        grid-row: span 2 / 1;
+
+        border-radius: 0;
+        box-shadow: 4px 0px 14px var(--preto-transparente);
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+    .secao4__lista
+    {
+        padding: 5% 10%;
+        box-sizing: border-box;
+        background-color: rgb(54, 54, 54);
+    }
+
+    .secao4__video
+    {
+        grid-column: span 2;
+        width: 50%;
+        height: 350px;
+        margin: 100px 0;
+    }
 }

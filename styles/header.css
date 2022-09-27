@@ -72,6 +72,11 @@
     box-shadow            : 0px 0px 8px 1px rgb(0 0 0);
 }
 
+.cabecalho__navbar__lista__itens__texto
+{
+    display   : none;
+}
+
 
 .item_home .cabecalho__navbar__lista__itens__icone
 {
@@ -86,4 +91,71 @@
 .item_horario .cabecalho__navbar__lista__itens__icone
 {
     background-image   : url(/images/horario-icone.png);
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+    .cabecalho
+    {
+        padding           : 1em 10%;
+        background        : transparent;
+        box-shadow        : none;
+        backdrop-filter   : none;
+    }
+
+    .cabecalho__titulo
+    {
+        height   : 125px;
+        width    : 88px;
+    }
+
+    .cabecalho__titulo__logo
+    {
+        background-image   : url(/images/logo-branco.png);
+    }
+
+    .cabecalho__navbar__lista
+    {
+        gap   : 2em;
+    }
+
+    .cabecalho__navbar__lista__itens__icone
+    {
+        display   : none;
+    }
+
+    .cabecalho__navbar__lista__itens__texto
+    {
+        display           : block;
+        text-decoration   : none;
+        color             : var(--cinza-claro);
+        font-weight       : 500;
+        font-size         : 1.2em;
+        text-transform    : uppercase;
+        position          : relative;
+    }
+
+    .cabecalho__navbar__lista__itens__texto:hover
+    {
+        color   : var(--laranja-claro);
+    }
+
+    .cabecalho__navbar__lista__itens__texto::before
+    {
+        content            : '';
+        display            : block;
+        height             : 1px;
+        width              : 0;
+        position           : absolute;
+        bottom             : -.3em;
+        background-color   : var(--laranja-claro);
+        transition         : all 500ms;
+    }
+
+    .cabecalho__navbar__lista__itens__texto:hover::before
+    {
+        color   : var(--laranja-claro);
+        width   : 100%;
+    }
 }
