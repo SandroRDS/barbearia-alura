@@ -79,6 +79,7 @@
     .secao1__conteudo__cabecalho__texto
     {
         font-size: 1.3em;
+        width: 40ch;
     }    
 }
 
@@ -153,10 +154,15 @@
 
 @media screen and (min-width: 1024px) 
 {
+    .secao2
+    {
+       
+    }
+
     .secao2__lista__itens
     {
         display: grid;
-        grid-template-columns: 40% 1fr;
+        grid-template-columns: 45% 1fr;
         justify-items: center;
         gap: 0;
         

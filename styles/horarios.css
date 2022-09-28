@@ -79,6 +79,7 @@
     .secao1__conteudo__cabecalho__texto
     {
         font-size: 1.3em;
+        width: 40ch;
     }    
 }
 
@@ -190,6 +191,44 @@
 }
 
 
+@media screen and (min-width: 1024px) 
+{
+    .secao2__tabela
+    {
+        width: 50%;
+    }
+
+    .secao2__tabela__legenda__icone.material-symbols-outlined
+    {
+        font-size: 30px;
+    }
+
+    .secao2__tabela__legenda__titulo
+    {
+        font-size: 2.5em;
+    }
+
+    .secao2__tabela__cabecalho
+    {
+        border-radius: 20px 0 20px 0;
+    }
+
+    .secao2__tabela__cabecalho__linha__dado
+    {
+        font-size: 1.5em;
+    }
+
+    .secao2__tabela__corpo__linha__dado
+    {
+        font-size: 1.2em;
+    }
+
+    .secao2__tabela__corpo__linha__dado:nth-child(1)
+    {
+        border-radius: 12px 0 0 12px;
+    }
+}
+
 
 /*----- Seção 3 -----*/
 
@@ -234,7 +273,6 @@
 {
     display         : grid;
     justify-items   : center;
-    align-items     : center;
     gap             : 1em;
 }
 
@@ -399,4 +437,210 @@
     font-family        : var(--fonte-texto);
     font-weight        : 500;
     background-image   : var(--gradiente-laranja);
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .secao3
+    {
+        align-items: center;
+    }
+
+    .secao3__titulo__icone.material-symbols-outlined
+    {
+        font-size: 30px;
+    }
+
+    .secao3__titulo__texto
+    {
+        font-size: 2.5em;
+    }
+
+    .secao3__formulario
+    {
+        width: 90%;
+
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "nome email"
+            "telefone contato"
+            "mensagem horario"
+            "novidades novidades"
+            "enviar enviar"
+        ;
+    }
+
+    .secao3__formulario__campo
+    {
+        border-radius: 8px;
+    }
+
+    .nome
+    {
+        grid-area: nome;
+    }
+
+    .nome:hover
+    {
+        border: 1px solid var(--laranja-medio-transparente);
+    }
+
+    .email
+    {
+        grid-area: email;
+    }
+
+    .email:hover
+    {
+        border: 1px solid var(--laranja-medio-transparente);
+    }
+
+    .telefone
+    {
+        grid-area: telefone;
+    }
+
+    .telefone:hover
+    {
+        border: 1px solid var(--laranja-medio-transparente);
+    }
+
+    .textarea
+    {
+        grid-area: mensagem;
+    }
+
+    .textarea:hover
+    {
+        border: 1px solid var(--laranja-medio-transparente);
+    }
+
+    .radio
+    {
+        grid-area: contato;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .radio .secao3__formulario__campo__titulo
+    {
+        grid-column: span 3;
+        font-size: 1.2em;
+    }
+
+    .radio .secao3__formulario__campo__radiobutton__label
+    {
+        cursor: pointer;
+    }
+
+    .radio .secao3__formulario__campo__radiobutton__label img
+    {
+        width: 30px;
+    }
+
+    .radio .secao3__formulario__campo__radiobutton__label span
+    {
+        font-size: .9em;
+    }
+
+    .select
+    {
+        grid-area: horario;
+        align-content: center;
+    }
+
+    .select .secao3__formulario__campo__titulo
+    {
+        font-size: 1.2em;
+    }
+
+    .select .secao3__formulario__campo__select
+    {
+        font-size: .9em;
+    }
+
+    .select .secao3__formulario__campo__select:hover
+    {
+        border: 1px solid var(--laranja-medio-transparente);
+        cursor: pointer;
+    }
+
+    .checkbox
+    {
+        grid-area: novidades;
+    }
+
+    .checkbox.secao3__formulario__campo
+    {
+        width: 50%;
+        justify-self: left;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .checkbox input
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+    .checkbox .secao3__formulario__campo__label
+    {
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .submit
+    {
+        grid-area: enviar;
+    }
+
+    .submit .secao3__formulario__campo__submit
+    {
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 350ms;
+    }
+
+    .submit .secao3__formulario__campo__submit:hover
+    {
+        background-image: var(--gradiente-laranja-invertido);
+        color: white;
+    }
+
+    .secao3__formulario__campo
+    {
+        padding: 1em;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .secao3__formulario__campo__legenda
+    {
+        display: none;
+    }
+
+    .secao3__formulario__campo__input
+    {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .secao3__formulario__campo__textarea
+    {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .secao3__formulario__campo__icone
+    {
+        align-items: center;
+    }
+
+    .secao3__formulario__campo__icone .material-symbols-outlined
+    {
+        font-size: 28px;
+    }
 }

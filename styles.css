@@ -7,6 +7,7 @@
 {
     --gradiente-amarelo-claro         : linear-gradient(to right top, #f0b207, #f3b923, #f5c035, #f8c744, #fbce52);
     --gradiente-laranja               : linear-gradient(to right top, #ffaf1b, #ffa014, #ff9112, #fe8114, #fd7118);
+    --gradiente-laranja-invertido     : linear-gradient(to left bottom, #ffaf1b, #ffa014, #ff9112, #fe8114, #fd7118);
     --amarelo-claro                   : #fcfce2;
     --cinza-claro                     : #CDCDCD;
     --cinza-claro-semitransparente    : #cdcdcd73;
