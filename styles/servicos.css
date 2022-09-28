@@ -64,6 +64,24 @@
     line-height   : 22px;
 }
 
+@media screen and (min-width: 1024px) 
+{
+    .secao1__conteudo
+    {
+        min-height: 60vh;
+    }
+
+    .secao1__conteudo__cabecalho__titulo
+    {
+        font-size: 4em;
+    }
+
+    .secao1__conteudo__cabecalho__texto
+    {
+        font-size: 1.3em;
+    }    
+}
+
 
 
 /*----- Seção 2 -----*/
