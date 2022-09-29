@@ -69,19 +69,19 @@
 {
     .secao1__conteudo
     {
-        min-height: 60vh;
+        min-height   : 60vh;
     }
 
     .secao1__conteudo__cabecalho__titulo
     {
-        font-size: 4em;
+        font-size   : 4em;
     }
 
     .secao1__conteudo__cabecalho__texto
     {
-        font-size: 1.3em;
-        width: 40ch;
-    }    
+        font-size   : 1.3em;
+        width       : 40ch;
+    }
 }
 
 
@@ -124,9 +124,9 @@
 
 .secao2__lista__itens__imagem
 {
-    width           : 100%;
-    border-radius   : 15px 15px 0 0;
-    background-color: var(--cinza-claro);
+    width              : 100%;
+    border-radius      : 15px 15px 0 0;
+    background-color   : var(--cinza-claro);
 }
 
 .secao2__lista__itens__titulo
@@ -155,43 +155,38 @@
 
 @media screen and (min-width: 1024px) 
 {
-    .secao2
-    {
-       
-    }
-
     .secao2__lista__itens
     {
-        display: grid;
-        grid-template-columns: 45% 1fr;
-        justify-items: center;
-        gap: 0;
+        display                 : grid;
+        grid-template-columns   : 45% 1fr;
+        justify-items           : center;
+        gap                     : 0;
         
-        width: 500px;
-        padding: 0;
-        border-radius: 20px;
+        width                   : 500px;
+        padding                 : 0;
+        border-radius           : 20px;
     }
 
     .secao2__lista__itens__imagem
     {
-        grid-row: span 3;
-        width: 100%;
-        border-radius: 18px 0 0 18px;
+        grid-row        : span 3;
+        width           : 100%;
+        border-radius   : 18px 0 0 18px;
     }
 
     .secao2__lista__itens__titulo
     {
-        font-size: 2.5em;
+        font-size   : 2.5em;
     }
 
     .secao2__lista__itens__descricao
     {
-        font-size: 1.1em;
-        width: 22ch;
+        font-size   : 1.1em;
+        width       : 22ch;
     }
 
     .secao2__lista__itens__valor
     {
-        font-size: 1.8em;
+        font-size   : 1.8em;
     }
 }
