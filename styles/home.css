@@ -33,6 +33,7 @@
     min-height        : 70vh;
     box-sizing        : border-box;
     padding           : 1em;
+    animation         : float 800ms ease-in-out;
     
     display           : flex;
     flex-direction    : column;

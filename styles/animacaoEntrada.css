@@ -1,0 +1,14 @@
+@keyframes float
+{
+    0%
+    {
+        opacity: 50%;
+        transform: translateY(-70px);
+    }
+
+    100%
+    {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
