@@ -194,6 +194,7 @@
     .secao2__fotografia
     {
         grid-row: span 2;
+        width: 100%;
     }
 
     .secao2__fotografia__imagem
