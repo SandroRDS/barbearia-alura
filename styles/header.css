@@ -24,7 +24,7 @@
     width    : 59px;
 }
 
-.cabecalho__titulo__logo
+.cabecalho__logo
 {
     display               : block;
     height                : inherit;
@@ -36,7 +36,7 @@
     background-repeat     : no-repeat;
 }
 
-.cabecalho__navbar__lista
+.cabecalho__lista
 {
     display      : flex;
     gap          : .8em;
@@ -45,7 +45,7 @@
     opacity      : 100%;
 }
 
-.cabecalho__navbar__lista__itens
+.cabecalho__itens
 {
     display       : flex;
     align-items   : center;
@@ -55,7 +55,7 @@
     transition    : all 400ms ease-in-out;
 }
 
-.cabecalho__navbar__lista__itens__icone
+.cabecalho__itens__icone
 {
     display               : inline-block;
     width                 : 35px;
@@ -72,23 +72,23 @@
     box-shadow            : 0px 0px 8px 1px rgb(0 0 0);
 }
 
-.cabecalho__navbar__lista__itens__texto
+.cabecalho__itens__texto
 {
     display   : none;
 }
 
 
-.item_home .cabecalho__navbar__lista__itens__icone
+.item_home .cabecalho__itens__icone
 {
     background-image   : url(/images/home-icone.png);
 }
 
-.item_produto .cabecalho__navbar__lista__itens__icone
+.item_produto .cabecalho__itens__icone
 {
     background-image   : url(/images/produtos-icone.png);
 }
 
-.item_horario .cabecalho__navbar__lista__itens__icone
+.item_horario .cabecalho__itens__icone
 {
     background-image   : url(/images/horario-icone.png);
 }
@@ -110,22 +110,22 @@
         width    : 88px;
     }
 
-    .cabecalho__titulo__logo
+    .cabecalho__logo
     {
         background-image   : url(/images/logo-branco.png);
     }
 
-    .cabecalho__navbar__lista
+    .cabecalho__lista
     {
         gap   : 2em;
     }
 
-    .cabecalho__navbar__lista__itens__icone
+    .cabecalho__itens__icone
     {
         display   : none;
     }
 
-    .cabecalho__navbar__lista__itens__texto
+    .cabecalho__itens__texto
     {
         display           : block;
         text-decoration   : none;
@@ -136,12 +136,12 @@
         position          : relative;
     }
 
-    .cabecalho__navbar__lista__itens__texto:hover
+    .cabecalho__itens__texto:hover
     {
         color   : var(--laranja-claro);
     }
 
-    .cabecalho__navbar__lista__itens__texto::before
+    .cabecalho__itens__texto::before
     {
         content            : '';
         display            : block;
@@ -153,7 +153,7 @@
         transition         : all 500ms;
     }
 
-    .cabecalho__navbar__lista__itens__texto:hover::before
+    .cabecalho__itens__texto:hover::before
     {
         color   : var(--laranja-claro);
         width   : 100%;
