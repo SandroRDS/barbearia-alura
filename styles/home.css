@@ -29,12 +29,12 @@
     color         : var(--laranja-claro);
 }
 
-.secao2__fotografia
+.secao2__picture
 {
     text-align: center;
 }
 
-.secao2__fotografia__imagem
+.secao2__imagem
 {
     width           : 40%;
     border-radius   : 14px;
@@ -52,20 +52,20 @@
     gap           : 1em;
 }
 
-.secao2__descricao__paragrafo .texto_destaque
+.secao2__paragrafo b
 {
     font-weight   : 500;
     color         : var(--laranja-claro);
 }
 
-.secao2__descricao__paragrafo .texto_citacao
+.secao2__paragrafo q
 {
     font-weight   : 500;
     color         : var(--laranja-claro);
     font-style    : italic;
 }
 
-.secao2__descricao__paragrafo .texto_enfase
+.secao2__paragrafo em
 {
     font-weight   : 400;
     color         : var(--laranja-medio);
@@ -90,13 +90,13 @@
         font-size: 3em;
     }
 
-    .secao2__fotografia
+    .secao2__picture
     {
         grid-row: span 2;
         width: 100%;
     }
 
-    .secao2__fotografia__imagem
+    .secao2__imagem
     {
         width: 100%;
         height: 100%;
@@ -235,7 +235,7 @@
     gap       : 0.5em;
 }
 
-.secao4__lista__itens
+.secao4__itens
 {
     position      : relative;
     font-weight   : 500;
@@ -246,14 +246,14 @@
     gap           : 10%;
 }
 
-.secao4__lista__itens::before
+.secao4__itens::before
 {
     content     : '\2022';
     font-size   : 2.5em;
     color       : var(--laranja-medio);
 }
 
-.secao4__lista__itens::after
+.secao4__itens::after
 {
     content            : '';
     display            : block;
