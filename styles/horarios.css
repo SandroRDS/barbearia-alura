@@ -8,47 +8,52 @@
 
 /*----- Seção 2 -----*/
 
-.secao2
+.secao2,
+.secao3
 {
-    width             : 100%;
-    box-sizing        : border-box;
-    padding           : 2em;
-    color             : var(--cinza-escuro);
+    width            : 100%;
+    box-sizing       : border-box;
+    padding          : 2em;
+    color            : var(--cinza-escuro);
 
-    display           : flex;
-    justify-content   : center;
+    display          : flex;
+    flex-direction   : column;
+    align-items      : center;
 }
 
-.secao2__tabela
-{
-    width     : 80%;
-    color     : var(--cinza-claro);
-
-    display   : grid;
-}
-
-.secao2__tabela__legenda
+.secao2__cabecalho,
+.secao3__cabecalho
 {
     background-color   : transparent;
     margin-bottom      : 1em;
 
-    display            : grid;
-    gap                : 0.5em;
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    gap                : .8em;
 }
 
-.secao2__tabela__legenda__icone
+.secao2__cabecalho__icone,
+.secao3__cabecalho__icone
 {
     color   : var(--laranja-medio);
 }
 
-.secao2__tabela__legenda__titulo
+.secao2__cabecalho__titulo,
+.secao3__cabecalho__titulo
 {
     font-family   : var(--fonte-titulo);
     font-size     : 2em;
-    color         : var(--cinza-escuro);
+    text-align    : center;
 }
 
-.secao2__tabela__cabecalho
+.tabela
+{
+    width     : 80%;
+    color     : var(--cinza-claro);
+}
+
+.tabela__cabecalho
 {
     background-image   : var(--gradiente-amarelo-claro);
     color              : var(--cinza-escuro);
@@ -59,7 +64,7 @@
     justify-content    : space-between;
 }
 
-.secao2__tabela__cabecalho__linha
+.tabela__cabecalho__linha
 {
     width                   : 100%;
 
@@ -67,18 +72,18 @@
     grid-template-columns   : 1fr 1fr 1fr;
 }
 
-.secao2__tabela__cabecalho__linha__dado
+.tabela__cabecalho__titulo
 {
     padding       : 0.5em;
     font-weight   : 700;
 }
 
-.secao2__tabela__corpo
+.tabela__corpo
 {
     border-radius   : 10px;
 }
 
-.secao2__tabela__corpo__linha
+.tabela__corpo__linha
 {
     display                 : grid;
     grid-template-columns   : 60% 40%;
@@ -86,7 +91,8 @@
     margin-bottom           : 3px;
 }
 
-.secao2__tabela__corpo__linha__dado
+.tabela__corpo__titulo,
+.tabela__corpo__dado
 {
     padding       : 1em;
     font-weight   : 500;
@@ -94,7 +100,7 @@
     box-sizing    : border-box;
 }
 
-.secao2__tabela__corpo__linha__dado:nth-child(1)
+.tabela__corpo__titulo
 {
     text-align         : right;
     background-color   : var(--cinza-escuro);
@@ -103,7 +109,7 @@
     border-radius      : 5px 0 0 5px;
 }
 
-.secao2__tabela__corpo__linha__dado:nth-child(2)
+.tabela__corpo__dado
 {
     text-align         : center;
     background-color   : var(--laranja-medio);
@@ -114,39 +120,42 @@
 
 @media screen and (min-width: 1024px) 
 {
-    .secao2__tabela
-    {
-        width   : 50%;
-    }
-
-    .secao2__tabela__legenda__icone.material-symbols-outlined
+    .secao2__cabecalho__icone,
+    .secao3__cabecalho__icone
     {
         font-size   : 30px;
     }
 
-    .secao2__tabela__legenda__titulo
+    .secao2__cabecalho__titulo,
+    .secao3__cabecalho__titulo
     {
         font-size   : 2.5em;
     }
 
-    .secao2__tabela__cabecalho
+    .tabela
+    {
+        width   : 50%;
+    }
+
+    .tabela__cabecalho
     {
         border-radius   : 20px 0 20px 0;
     }
 
-    .secao2__tabela__cabecalho__linha__dado
+    .tabela__cabecalho__titulo
     {
         font-size   : 1.5em;
     }
 
-    .secao2__tabela__corpo__linha__dado
-    {
-        font-size   : 1.2em;
-    }
-
-    .secao2__tabela__corpo__linha__dado:nth-child(1)
+    .tabela__corpo__titulo
     {
         border-radius   : 12px 0 0 12px;
+    }
+
+    .tabela__corpo__titulo,
+    .tabela__corpo__dado
+    {
+        font-size   : 1.2em;
     }
 }
 
@@ -155,49 +164,18 @@
 
 .secao3
 {
-    width              : 100%;
-    box-sizing         : border-box;
-    padding            : 2em;
     background-color   : var(--cinza-escuro);
     color              : var(--cinza-claro);
-
-    display            : flex;
-    flex-direction     : column;
-    justify-content    : center;
 }
 
-.secao3__titulo
-{
-    display         : grid;
-    align-items     : center;
-    justify-items   : center;
-    gap             : 0.5em;
-
-    margin-bottom   : 1em;
-}
-
-.secao3__titulo__icone
-{
-    display   : inline;
-    color     : var(--laranja-medio);
-}
-
-.secao3__titulo__texto
-{
-    font-family   : var(--fonte-titulo);
-    color         : var(--laranja-claro);
-    font-size     : 2em;
-    text-align    : center;
-}
-
-.secao3__formulario
+.formulario
 {
     display         : grid;
     justify-items   : center;
     gap             : 1em;
 }
 
-.secao3__formulario__campo
+.formulario__campo
 {
     width              : 80%;
     background-color   : var(--cinza-escuro);
@@ -209,15 +187,57 @@
     align-items        : flex-end;
 }
 
-.secao3__formulario__campo__legenda
+.formulario__campo.textarea
 {
-    font-size     : .7em;
-    color         : white;
-    font-weight   : 300;
-    padding       : 0 .5em 0 .5em;
+    padding   : .8em;
 }
 
-.secao3__formulario__campo__input
+.formulario__campo.radio
+{
+    border    : none;
+    padding   : 0;
+    
+    display   : grid;
+    gap       : 1em;
+}
+
+.formulario__campo.select
+{
+    border          : none;
+    padding         : 0;
+
+    display         : grid;
+    justify-items   : center;
+    gap             : 1em;
+}
+
+.formulario__campo.checkbox
+{
+    border        : none;
+    padding       : 0;
+
+    display       : flex;
+    align-items   : center;
+}
+
+.formulario__campo.submit
+{
+    border            : none;
+    padding           : 0;
+    
+    display           : flex;
+    justify-content   : center;
+}
+
+.formulario__legenda
+{
+    font-size        : .7em;
+    color            : white;
+    font-weight      : 300;
+    padding-inline   : .5em;
+}
+
+.formulario__input
 {
     height             : 100%;
     width              : 80%;
@@ -230,7 +250,12 @@
     padding            : 0.3em;
 }
 
-.secao3__formulario__campo__icone
+.formulario__input:focus
+{
+    border-bottom   : 1px solid var(--laranja-medio-transparente);
+}
+
+.formulario__icone
 {
     width             : 20%;
     height            : 100%;
@@ -240,22 +265,20 @@
     justify-content   : center;
 }
 
-.secao3__formulario__campo__icone span
+.formulario__icone span
 {
     color   : var(--cinza-claro);
 }
 
-.secao3__formulario__campo__input:focus
+.formulario__titulo
 {
-    border-bottom   : 1px solid var(--laranja-medio-transparente);
+    font-size     : .9em;
+    text-align    : center;
+    padding       : 0 2ch 0 2ch;
+    line-height   : 20px;
 }
 
-.textarea.secao3__formulario__campo
-{
-    padding   : .8em;
-}
-
-.secao3__formulario__campo__textarea
+.formulario__textarea
 {
     font-size          : .8em;
     font-family        : var(--fonte-texto);
@@ -268,52 +291,26 @@
     outline            : none;
 }
 
-.radio.secao3__formulario__campo
-{
-    border    : none;
-    padding   : 0;
-    
-    display   : grid;
-    gap       : 1em;
-}
 
-.secao3__formulario__campo__titulo
-{
-    font-size     : .9em;
-    text-align    : center;
-    padding       : 0 2ch 0 2ch;
-    line-height   : 20px;
-}
-
-.radio .secao3__formulario__campo__radiobutton,
-.radio .secao3__formulario__campo__radiobutton__label
+.formulario__radiobutton,
+.formulario__radiobutton__label
 {
     display       : flex;
     align-items   : center;
     gap           : .5em;
 }
 
-.radio .secao3__formulario__campo__radiobutton__label img
+.formulario__radiobutton__label img
 {
     width   : 25px;
 }
 
-.radio .secao3__formulario__campo__radiobutton__label span
+.formulario__radiobutton__label span
 {
     font-size   : .7em;
 }
 
-.select.secao3__formulario__campo
-{
-    border          : none;
-    padding         : 0;
-
-    display         : grid;
-    justify-items   : center;
-    gap             : 1em;
-}
-
-.secao3__formulario__campo__select
+.formulario__select
 {
     width              : 150px;
     border-radius      : 4px 4px 0 0;
@@ -325,31 +322,13 @@
     color              : var(--cinza-claro);
 }
 
-.checkbox.secao3__formulario__campo
-{
-    border        : none;
-    padding       : 0;
-
-    display       : flex;
-    align-items   : center;
-}
-
-.secao3__formulario__campo__label
+.formulario__checkbox__label
 {
     font-size     : .7em;
     margin-left   : 0.5em;
 }
 
-.submit.secao3__formulario__campo
-{
-    border            : none;
-    padding           : 0;
-    
-    display           : flex;
-    justify-content   : center;
-}
-
-.secao3__formulario__campo__submit
+.formulario__submit
 {
     padding            : 1em 2em;
     border-radius      : 20px;
@@ -367,17 +346,7 @@
         align-items   : center;
     }
 
-    .secao3__titulo__icone.material-symbols-outlined
-    {
-        font-size   : 30px;
-    }
-
-    .secao3__titulo__texto
-    {
-        font-size   : 2.5em;
-    }
-
-    .secao3__formulario
+    .formulario
     {
         width                   : 90%;
 
@@ -392,106 +361,16 @@
         ;
     }
 
-    .secao3__formulario__campo
+    .formulario__campo
     {
         border-radius   : 8px;
+        padding       : 1em;
+
+        display       : flex;
+        align-items   : center;
     }
 
-    .nome
-    {
-        grid-area   : nome;
-    }
-
-    .nome:hover
-    {
-        border   : 1px solid var(--laranja-medio-transparente);
-    }
-
-    .email
-    {
-        grid-area   : email;
-    }
-
-    .email:hover
-    {
-        border   : 1px solid var(--laranja-medio-transparente);
-    }
-
-    .telefone
-    {
-        grid-area   : telefone;
-    }
-
-    .telefone:hover
-    {
-        border   : 1px solid var(--laranja-medio-transparente);
-    }
-
-    .textarea
-    {
-        grid-area   : mensagem;
-    }
-
-    .textarea:hover
-    {
-        border   : 1px solid var(--laranja-medio-transparente);
-    }
-
-    .radio
-    {
-        grid-area               : contato;
-        grid-template-columns   : 1fr 1fr 1fr;
-    }
-
-    .radio .secao3__formulario__campo__titulo
-    {
-        grid-column   : span 3;
-        font-size     : 1.2em;
-    }
-
-    .radio .secao3__formulario__campo__radiobutton__label
-    {
-        cursor   : pointer;
-    }
-
-    .radio .secao3__formulario__campo__radiobutton__label img
-    {
-        width   : 30px;
-    }
-
-    .radio .secao3__formulario__campo__radiobutton__label span
-    {
-        font-size   : .9em;
-    }
-
-    .select
-    {
-        grid-area       : horario;
-        align-content   : center;
-    }
-
-    .select .secao3__formulario__campo__titulo
-    {
-        font-size   : 1.2em;
-    }
-
-    .select .secao3__formulario__campo__select
-    {
-        font-size   : .9em;
-    }
-
-    .select .secao3__formulario__campo__select:hover
-    {
-        border   : 1px solid var(--laranja-medio-transparente);
-        cursor   : pointer;
-    }
-
-    .checkbox
-    {
-        grid-area   : novidades;
-    }
-
-    .checkbox.secao3__formulario__campo
+    .formulario__campo.checkbox
     {
         width             : 50%;
         justify-self      : left;
@@ -500,16 +379,71 @@
         justify-content   : center;
     }
 
-    .checkbox input
+    .formulario__campo.select
     {
-        width    : 14px;
-        height   : 14px;
+        align-content   : center;
     }
 
-    .checkbox .secao3__formulario__campo__label
+    .formulario__legenda
+    {
+        display   : none;
+    }
+
+    .formulario__input
     {
         font-size   : 1em;
-        cursor      : pointer;
+        padding     : 0;
+    }
+    
+    .formulario__icone
+    {
+        align-items   : center;
+    }
+
+    .formulario__titulo
+    {
+        font-size     : 1.2em;
+    }
+
+    .radio .formulario__titulo
+    {
+        grid-column   : span 3;
+    }
+
+    .nome
+    {
+        grid-area   : nome;
+    }
+    
+    .email
+    {
+        grid-area   : email;
+    }
+
+    .telefone
+    {
+        grid-area   : telefone;
+    }
+    
+    .textarea
+    {
+        grid-area   : mensagem;
+    }
+
+    .radio
+    {
+        grid-area               : contato;
+        grid-template-columns   : 1fr 1fr 1fr;
+    }
+
+    .select
+    {
+        grid-area       : horario;
+    }
+
+    .checkbox
+    {
+        grid-area   : novidades;
     }
 
     .submit
@@ -517,51 +451,68 @@
         grid-area   : enviar;
     }
 
-    .submit .secao3__formulario__campo__submit
+    .nome:hover,
+    .email:hover,
+    .telefone:hover,
+    .textarea:hover
+    {
+        border   : 1px solid var(--laranja-medio-transparente);
+    }
+
+    .formulario__radiobutton__label
+    {
+        cursor   : pointer;
+    }
+
+    .formulario__radiobutton__label img
+    {
+        width   : 30px;
+    }
+
+    .formulario__radiobutton__label span
+    {
+        font-size   : .9em;
+    }
+
+    .formulario__select
+    {
+        font-size   : .9em;
+    }
+
+    .formulario__select:hover
+    {
+        border   : 1px solid var(--laranja-medio-transparente);
+        cursor   : pointer;
+    }
+
+    .formulario__checkbox__input
+    {
+        width    : 14px;
+        height   : 14px;
+    }
+
+    .formulario__checkbox__label
+    {
+        font-size   : 1em;
+        cursor      : pointer;
+    }
+
+    .formulario__submit
     {
         font-size    : 1.2em;
         cursor       : pointer;
         transition   : all 350ms;
     }
 
-    .submit .secao3__formulario__campo__submit:hover
+    .formulario__submit:hover
     {
         background-image   : var(--gradiente-laranja-invertido);
         color              : white;
     }
 
-    .secao3__formulario__campo
-    {
-        padding       : 1em;
-
-        display       : flex;
-        align-items   : center;
-    }
-
-    .secao3__formulario__campo__legenda
-    {
-        display   : none;
-    }
-
-    .secao3__formulario__campo__input
+    .formulario__textarea
     {
         font-size   : 1em;
         padding     : 0;
-    }
-
-    .secao3__formulario__campo__textarea
-    {
-        font-size   : 1em;
-        padding     : 0;
-    }
-
-    .secao3__formulario__campo__icone
-    {
-        align-items   : center;
-    }
-
-    .secao3__formulario__campo__icone .material-symbols-outlined
-    {
-        font-size   : 28px;
     }
 }
