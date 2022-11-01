@@ -55,7 +55,7 @@
     transition    : all 400ms ease-in-out;
 }
 
-.cabecalho__itens__icone
+.cabecalho__icone
 {
     display               : inline-block;
     width                 : 35px;
@@ -72,23 +72,23 @@
     box-shadow            : 0px 0px 8px 1px rgb(0 0 0);
 }
 
-.cabecalho__itens__texto
+.cabecalho__texto
 {
     display   : none;
 }
 
 
-.item_home .cabecalho__itens__icone
+.item_home .cabecalho__icone
 {
     background-image   : url(/images/home-icone.png);
 }
 
-.item_produto .cabecalho__itens__icone
+.item_produto .cabecalho__icone
 {
     background-image   : url(/images/produtos-icone.png);
 }
 
-.item_horario .cabecalho__itens__icone
+.item_horario .cabecalho__icone
 {
     background-image   : url(/images/horario-icone.png);
 }
@@ -120,12 +120,12 @@
         gap   : 2em;
     }
 
-    .cabecalho__itens__icone
+    .cabecalho__icone
     {
         display   : none;
     }
 
-    .cabecalho__itens__texto
+    .cabecalho__texto
     {
         display           : block;
         text-decoration   : none;
@@ -136,12 +136,12 @@
         position          : relative;
     }
 
-    .cabecalho__itens__texto:hover
+    .cabecalho__texto:hover
     {
         color   : var(--laranja-claro);
     }
 
-    .cabecalho__itens__texto::before
+    .cabecalho__texto::before
     {
         content            : '';
         display            : block;
@@ -153,7 +153,7 @@
         transition         : all 500ms;
     }
 
-    .cabecalho__itens__texto:hover::before
+    .cabecalho__texto:hover::before
     {
         color   : var(--laranja-claro);
         width   : 100%;
